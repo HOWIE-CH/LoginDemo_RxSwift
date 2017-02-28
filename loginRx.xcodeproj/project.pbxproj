@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4A13D1009CACD8270CD5E977 /* Pods_loginRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF0409B42AB3D90B1C8D75E /* Pods_loginRx.framework */; };
+		5C70BD161E6589F800D8F0F4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C70BD151E6589F800D8F0F4 /* HomeViewController.swift */; };
+		5C70BD181E658A0900D8F0F4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C70BD171E658A0900D8F0F4 /* HomeViewModel.swift */; };
+		5C70BD1A1E65934000D8F0F4 /* heros.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C70BD191E65934000D8F0F4 /* heros.plist */; };
+		5C70BD1C1E65934A00D8F0F4 /* HerosItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C70BD1B1E65934A00D8F0F4 /* HerosItem.swift */; };
 		6111E4041E654577007A7340 /* RxExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111E4031E654577007A7340 /* RxExtension.swift */; };
 		6111E4431E65570E007A7340 /* UserItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111E4421E65570E007A7340 /* UserItem.swift */; };
 		6111E4461E6563FC007A7340 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6111E4441E6563FC007A7340 /* LoginViewController.swift */; };
@@ -23,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C70BD151E6589F800D8F0F4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5C70BD171E658A0900D8F0F4 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5C70BD191E65934000D8F0F4 /* heros.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = heros.plist; sourceTree = "<group>"; };
+		5C70BD1B1E65934A00D8F0F4 /* HerosItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerosItem.swift; sourceTree = "<group>"; };
 		6111E4031E654577007A7340 /* RxExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxExtension.swift; sourceTree = "<group>"; };
 		6111E4421E65570E007A7340 /* UserItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserItem.swift; sourceTree = "<group>"; };
 		6111E4441E6563FC007A7340 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -63,35 +71,38 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		6111E44A1E6577E3007A7340 /* Home */ = {
+		5C70BD121E6589E800D8F0F4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6111E44B1E6577E3007A7340 /* Model */,
-				6111E44C1E6577E3007A7340 /* View */,
-				6111E44D1E6577E3007A7340 /* ViewModel */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		6111E44B1E6577E3007A7340 /* Model */ = {
-			isa = PBXGroup;
-			children = (
+				5C70BD1B1E65934A00D8F0F4 /* HerosItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		6111E44C1E6577E3007A7340 /* View */ = {
+		5C70BD131E6589E800D8F0F4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5C70BD151E6589F800D8F0F4 /* HomeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		6111E44D1E6577E3007A7340 /* ViewModel */ = {
+		5C70BD141E6589E800D8F0F4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5C70BD171E658A0900D8F0F4 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6111E44A1E6577E3007A7340 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5C70BD131E6589E800D8F0F4 /* View */,
+				5C70BD141E6589E800D8F0F4 /* ViewModel */,
+				5C70BD121E6589E800D8F0F4 /* Model */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		617AF1B41E63F59200FFAD20 = {
@@ -207,6 +218,7 @@
 		618CBB271E641B3700C30CD8 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				5C70BD191E65934000D8F0F4 /* heros.plist */,
 				618CBB281E641B5800C30CD8 /* ValidationResultEnum.swift */,
 				6111E4031E654577007A7340 /* RxExtension.swift */,
 			);
@@ -288,6 +300,7 @@
 				617AF1EC1E64074B00FFAD20 /* Main.storyboard in Resources */,
 				617AF1CB1E63F59200FFAD20 /* LaunchScreen.storyboard in Resources */,
 				617AF1C81E63F59200FFAD20 /* Assets.xcassets in Resources */,
+				5C70BD1A1E65934000D8F0F4 /* heros.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,10 +362,13 @@
 				6111E4461E6563FC007A7340 /* LoginViewController.swift in Sources */,
 				617AF1EE1E64076800FFAD20 /* RegiestViewModel.swift in Sources */,
 				617AF1C11E63F59200FFAD20 /* AppDelegate.swift in Sources */,
+				5C70BD181E658A0900D8F0F4 /* HomeViewModel.swift in Sources */,
 				617AF1E91E64068E00FFAD20 /* RegiestController.swift in Sources */,
 				6111E4491E65693F007A7340 /* LoginViewModel.swift in Sources */,
+				5C70BD161E6589F800D8F0F4 /* HomeViewController.swift in Sources */,
 				618CBB291E641B5800C30CD8 /* ValidationResultEnum.swift in Sources */,
 				6111E4041E654577007A7340 /* RxExtension.swift in Sources */,
+				5C70BD1C1E65934A00D8F0F4 /* HerosItem.swift in Sources */,
 				6111E4431E65570E007A7340 /* UserItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,7 +493,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = loginRx/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluestar.loginRx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -491,7 +507,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = loginRx/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluestar.loginRx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
