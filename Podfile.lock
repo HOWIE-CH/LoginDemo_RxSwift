@@ -1,0 +1,21 @@
+PODS:
+  - RxCocoa (3.0.1):
+    - RxSwift (~> 3.0)
+  - RxDataSources (1.0.3):
+    - RxCocoa (~> 3.0)
+    - RxSwift (~> 3.0)
+  - RxSwift (3.0.1)
+
+DEPENDENCIES:
+  - RxCocoa (~> 3.0.0-rc.1)
+  - RxDataSources (~> 1.0.3)
+  - RxSwift (~> 3.0.0-rc.1)
+
+SPEC CHECKSUMS:
+  RxCocoa: 15a52fc590dcc700cb4a690a633b5c5184ce3a78
+  RxDataSources: a021a0e944ba5f7991259829d973afdbfa719c0b
+  RxSwift: af5680055c4ad04480189c52d28385b1029493a6
+
+PODFILE CHECKSUM: a998170085259a70dcc07212041411ce9c2232ba
+
+COCOAPODS: 1.2.0
