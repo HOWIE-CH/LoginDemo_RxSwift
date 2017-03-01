@@ -42,6 +42,8 @@ class HomeViewModel {
         
         let result: Observable<[SectionModel<String, HerosItem>]> = searchText.asObservable()
             .flatMapLatest{ keyWord -> Observable<[SectionModel<String, HerosItem>]> in
+                
+                
                 print(#file, #line, #function, ":++++++++++")
                 
                 // 默认搜索字为空时候加载所有数据
