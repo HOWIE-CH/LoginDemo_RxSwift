@@ -24,10 +24,12 @@ class HomeViewModel {
         }
         
         let tmpArray = NSMutableArray()
+//        var tmp = [HerosItem]()
         for  dict in allArray {
             let hero = HerosItem(dict: dict)
-//            herosArray.append(hero)
-                tmpArray.add(hero)
+//            tmp += hero
+//            tmp.append(hero);   //这里不能用这个方法
+            tmpArray.add(hero)
         }
         let array: NSArray = tmpArray
         return array as! [HerosItem]
