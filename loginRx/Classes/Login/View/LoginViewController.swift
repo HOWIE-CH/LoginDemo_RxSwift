@@ -49,10 +49,6 @@ class LoginViewController: UIViewController {
             .subscribe(onNext: { [weak self] result in
                 if result {
                     self?.showAlter(message: "登录成功！")
-                    
-                    // 跳转到首页
-                    
-                    
                 } else {
                     self?.showAlter(message: "用户名或密码不正确")
                 }
@@ -74,6 +70,14 @@ extension LoginViewController {
                                         message: "\(message)",
             preferredStyle: .alert)
         let action = UIAlertAction(title: "好的", style: .default) { (action) in
+            // 跳转到首页
+            DispatchQueue.main.asyncAfter(deadline: .now(),
+                                          execute: { [weak self] in
+                                            
+                let home = HomeViewController()
+                home.title = self?.usernameTextField.text
+                self?.navigationController?.pushViewController(home, animated: true)
+                })
             
         }
         

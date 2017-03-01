@@ -8,12 +8,20 @@
 
 import Foundation
 
-class HerosItem {
+class HerosItem: NSObject{
     
-    let icon: String = ""
-    let name: String = ""
-    let intro: String = ""
+    var icon: String = ""
+    var name: String = ""
+    var intro: String = ""
     
+    init(dict: [String: AnyObject]) {
+        super.init()
+        setValuesForKeys(dict)
+    }
+    
+    override func setValue(_ value: Any?, forUndefinedKey key: String) {
+        
+    }
     
     
 }
